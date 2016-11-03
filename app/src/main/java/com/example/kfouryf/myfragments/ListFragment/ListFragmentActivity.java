@@ -1,7 +1,9 @@
-package com.example.kfouryf.myfragments;
+package com.example.kfouryf.myfragments.ListFragment;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.kfouryf.myfragments.R;
 
 public class ListFragmentActivity extends AppCompatActivity {
 

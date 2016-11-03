@@ -1,4 +1,4 @@
-package com.example.kfouryf.myfragments;
+package com.example.kfouryf.myfragments.ListFragment;
 
 
 import android.os.Bundle;
@@ -14,6 +14,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.kfouryf.myfragments.ListFragment.ListFragmentActivity;
+import com.example.kfouryf.myfragments.Multi_Panel.MultiPanelActivity;
 import com.example.kfouryf.myfragments.R;
 import com.example.kfouryf.myfragments.data.Candidates;
 

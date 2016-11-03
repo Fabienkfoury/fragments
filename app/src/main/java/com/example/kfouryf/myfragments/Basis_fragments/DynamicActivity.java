@@ -1,10 +1,14 @@
-package com.example.kfouryf.myfragments;
+package com.example.kfouryf.myfragments.Basis_fragments;
 
 import android.content.res.Configuration;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.kfouryf.myfragments.Basis_fragments.BlankFragment;
+import com.example.kfouryf.myfragments.Basis_fragments.BlankFragment2;
+import com.example.kfouryf.myfragments.R;
 
 public class DynamicActivity extends AppCompatActivity {
 

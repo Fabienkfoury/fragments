@@ -24,12 +24,19 @@
         android:onClick="onButtonClick"
         android:text="List fragment" />
 
+    <Button
+        android:id="@+id/multipanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonClick"
+        android:text="Multi panel" />
+
 
     <fragment
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:name="com.example.kfouryf.myfragments.BlankFragment"
+        android:name="com.example.kfouryf.myfragments.Basis_fragments.BlankFragment"
         android:id="@+id/fragment"
         tools:layout="@layout/fragment_blank" />
 
@@ -37,7 +44,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:name="com.example.kfouryf.myfragments.BlankFragment2"
+        android:name="com.example.kfouryf.myfragments.Basis_fragments.BlankFragment2"
         android:id="@+id/fragment2"
         tools:layout="@layout/fragment_blank2" />
 

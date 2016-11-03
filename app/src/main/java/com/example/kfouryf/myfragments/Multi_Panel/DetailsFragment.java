@@ -1,4 +1,4 @@
-package com.example.kfouryf.myfragments;
+package com.example.kfouryf.myfragments.Multi_Panel;
 
 
 import android.os.Bundle;
@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.kfouryf.myfragments.R;
 import com.example.kfouryf.myfragments.data.Candidates;
 
 
@@ -38,9 +39,9 @@ public class DetailsFragment extends Fragment {
         Bundle args = getArguments();
         if (args != null) {
             int position = args.getInt(POSITION);
-            TextView description = (TextView) getActivity().findViewById(R.id.description);
+            TextView description = (TextView) getActivity().findViewById(R.id.description);                 // SAME THING
             description.setText(Candidates.candidateDetails[position]);
-            ImageView imageView = (ImageView) getActivity().findViewById(R.id.imageView);
+            ImageView imageView = (ImageView) getActivity().findViewById(R.id.imageView);               // ALLOW TO PASS DATA
             imageView.setImageResource(Candidates.candidatePhotos[position]);
         } else {
             TextView description = (TextView) getActivity().findViewById(R.id.description);
