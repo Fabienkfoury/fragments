@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     public void onButtonClick(View v) {
         switch (v.getId()) {
             case R.id.dynamicFragments:
-                startActivity(new Intent(this, DynamicActivity.class));
+                    startActivity(new Intent(this, DynamicActivity.class));
                 break;
 
             case R.id.listFragments:

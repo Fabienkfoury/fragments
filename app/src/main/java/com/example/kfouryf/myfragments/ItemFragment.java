@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,6 +27,12 @@ public class ItemFragment extends ListFragment implements AdapterView.OnItemClic
         // Required empty public constructor
     }
 
+    @Override
+    public void onStart() {
+        super.onStart();
+        getListView().setChoiceMode(ListView.CHOICE_MODE_SINGLE);
+        getListView().setSelector(android.R.color.darker_gray);
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -40,7 +47,13 @@ public class ItemFragment extends ListFragment implements AdapterView.OnItemClic
         super.onActivityCreated(savedInstanceState);
         setListAdapter(new ArrayAdapter<String>(getActivity(),
                 android.R.layout.simple_list_item_1, android.R.id.text1, Candidates.candidateNames));
-        getListView().setOnItemClickListener(this);
+        if (getActivity() instanceof ListFragmentActivity) {
+            getListView().setOnItemClickListener(this);
+        }
+
+        if (getActivity() instanceof MultiPanelActivity) {
+            getListView().setOnItemClickListener((MultiPanelActivity) getActivity());
+        }
     }
 
     @Override
